@@ -1,0 +1,160 @@
+body{
+    background-color: #c5e4e7;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-family: 'Space Mono', monospace;
+}
+
+.logoContainer{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 75px;
+}
+
+.logoContainer img{
+    width: 6%;
+    height: auto;
+}
+
+.formContainer{
+    box-sizing: border-box;
+    width: 60%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 10px 10px 50px #aee0da;
+}
+
+.formBlock{
+    width: 50%;
+    height: inherit;
+}
+
+.output{
+    box-sizing: border-box;
+    background-color: #00474b;
+    border-radius: 20px;
+    margin-left: 2.5%;
+    margin-right: 0;
+    padding: 30px;
+}
+
+.input{
+   margin-right: 2.5%;
+   margin-left: 0;
+   box-sizing: border-box;
+}
+
+input{
+    width: 90%;
+    font-size: 24px;
+    padding: 5px 10px 5px 10px;
+    border-style: none;
+    background-color: #c5e4e7;
+    border-radius: 7px;
+    margin: 5px;
+    font-family: 'Space Mono', monospace;
+    color: #00474b;
+    text-align: right;
+    background-repeat: no-repeat;
+    background-size: 3%;
+    background-position: 3% 50%;
+}
+
+label{
+    color: gray;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+button{
+    background-color: #00474b;
+    color: #ffffff;
+    border: none;
+    width: 30%;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5vw;
+    margin: 5px 0px 5px 0px;
+    padding: 5px 0px 5px 0px;
+    border-radius: 7px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.billContainer{
+    margin-bottom: 50px;
+}
+
+.buttonContainer{
+    margin-bottom: 50px;
+}
+
+#billInput{
+    background-image: url("images/icon-dollar.svg"); 
+}
+
+#peopleInput{
+    background-image: url("images/icon-person.svg");
+}
+
+.outputSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tipTitle{
+    width: 30%;
+}
+
+.tipTitle p{
+    color: #ffffff;
+
+}
+
+.tipOutput{
+    width: 70%;
+    text-align: right;
+    
+}
+
+.tipOutput h1{
+    color: #26c2ad;
+    font-size: 2.5vw;
+    margin: 0;
+}
+
+span{
+    color: #c5e4e7;
+}
+
+#resetButton{
+    width: 100%;
+    background-color: #26c2ad;
+    color: #00474b;
+    font-size: 16px;
+    align-self: flex-end;
+    padding: 15px;
+    margin-top: 130px;
+}
+
+@media only screen and (max-width: 768px) {
+    
+}

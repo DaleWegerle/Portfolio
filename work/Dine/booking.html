@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bookingStyle.css">
+  <title>dine | booking</title>
+</head>
+<body>
+  <section id="intro">
+    <div id="introContent">
+      <a href="index.html"><img src="images/logo.svg" alt="dine logo"></a>
+      <h1>Reservations</h1>
+      <p>We can't wait to host you. If you have any special requirements please feel free to call on the phone number below. We'll be happy to accomodate you.</p>
+    </div>
+  </section>
+
+  <section id="formContainer">
+    <div id="colLeft"></div>
+    <div id="colRight">
+      <div id="form">
+        <div id="fullWidth">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="email" placeholder="Email">
+        </div><br>
+        <div id="inlineSection" class="date">
+          <label for="date">Pick a date:</label><br>
+          <input type="text" placeholder="DD" maxlength="2">
+          <input type="text" placeholder="MM" maxlength="2">
+          <input type="text" placeholder="YYYY" maxlength="4">
+        </div>
+        <div id="inlineSectionTime">
+          <label for="date">Pick a time:</label><br>
+          <input type="text" placeholder="00">
+          <input type="text" placeholder="00">
+          <select name="" id="" aria-placeholder="AM">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+        </div>
+        <div id="paxSelect" style="margin-bottom: 50px;">
+          <p id="arrows" onclick="paxMinus()">-</p>
+          <p id="pax">1 Person</p>
+          <P id="arrows" onclick="paxAdd()">+</P>
+        </div>
+        <a href="index.html"><button>MAKE RESERVATION</button></a>
+      </div>
+      <img src="images/patterns/pattern-lines.svg" alt="Gold Three Lines Icon">
+    </div>
+  </section>
+
+  
+  <section id="footer">
+    <div id="footerSectionLogo">
+      <img src="images/logo.svg" alt="Dine Logo">
+    </div>
+    <div id="footerSection">
+      <p>MARTHWAITE, SEDBERGH</p>
+      <p>CUMBRIA</p>
+      <p>+00 44 123 4567</p>
+    </div>
+    <div id="footerSection">
+      <p>OPEN TIMES</p>
+      <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+      <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+    </div>
+  </section>
+
+  <script>
+
+    var i = 1;
+
+    function paxAdd(){
+      i = i + 1;
+      document.getElementById("pax").innerHTML = i + " People";
+    }
+
+    function paxMinus(){
+      i = i - 1;
+      document.getElementById("pax").innerHTML = i + " People";
+      if(i <= 1){
+        i = 1;
+        document.getElementById("pax").innerHTML = "1 Person";
+      }
+    }
+  </script>
+
+</body>
+</html>

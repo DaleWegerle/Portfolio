@@ -1,0 +1,256 @@
+body{
+    background-color: #674bb1;
+    background-image: url("images/bg-desktop.svg");
+    background-size: 1300px 780px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+#modalContainer{
+    /*background-color: #f44fc5;*/
+    background-image: linear-gradient(#f44fc5, #674bb1);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    /*opacity: 90%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+#modalContent{
+    padding: 25px;
+    width: 20%;
+    height: auto;
+    background-color: #ffffff;
+    opacity: 100%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalContent img{
+    width: 35px;
+    height: auto;
+}
+
+#close{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#modalContent img:hover{
+    cursor: pointer;
+}
+
+#modalButton{
+    background-color: #f44fc5;
+    width: 70%;
+    color: #ffffff;
+    box-shadow: none;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+#modalButton:hover{
+    cursor: pointer;
+}
+
+h2{
+    color: #674bb1;
+}
+
+input{
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 90%;
+    background-color: #e0e0e0;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.fade-in {
+    animation: fadeIn ease 0.5s;
+    -webkit-animation: fadeIn ease 0.5s;
+    -moz-animation: fadeIn ease 0.5s;
+    -o-animation: fadeIn ease 0.5s;
+    -ms-animation: fadeIn ease 0.5s;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+#logo{
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#image{
+    width: 50%;
+    padding: 0px 50px 0px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#image img{
+    width: 100%;
+    height: auto;
+}
+
+#info{
+    width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#info h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    margin: 0;
+}
+
+button{
+    background-color: #ffffff;
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    width: 200px;
+    color: #674bb1;
+    margin-top: 50px;
+    border-radius: 25px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    color: #674bb1;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 50px 25px 50px;
+    box-sizing: border-box;
+}
+
+.icons{
+   width: 40px;
+   height: auto;
+   margin-left: 30px;  
+}
+
+
+
+@media only screen and (max-width: 768px){
+    body{
+        background-image: url("images/bg-mobile.svg");
+        
+    }
+
+    #content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    #image{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #image img{
+        width: 100%;
+    }
+
+    #info{
+        width: 100%;
+        text-align: center;
+    }
+
+    h1{
+        line-height: 58px;
+    }
+
+    #footer{
+        justify-content: center;
+    }
+
+    .icons{
+        margin: 0 15px 0 15px;
+    }
+
+    #modalContent{
+        width: 70%;
+    }
+
+    
+}

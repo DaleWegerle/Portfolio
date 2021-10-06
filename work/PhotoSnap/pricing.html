@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="pricingStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>PhotoSnap | Pricing</title>
+</head>
+<body>
+
+  <nav id="desktop">
+    <div class="side logo">
+      <a href="index.html"><img src="assets/shared/desktop/logo.svg" alt="PhotoSnap Logo"></a>
+    </div>
+    <div id="middle">
+      <a href="stories.html">STORIES</a>
+      <a href="features.html">FEATURES</a>
+      <a href="pricing.html" style="color: #9b9b9b;">PRICING</a>
+    </div>
+    <div class="side button">
+      <button>GET AN INVITE</button>
+    </div>
+  </nav>
+
+  <nav id="mobile">
+    <div id="logo">
+      <a href="index.html"><img src="assets/shared/desktop/logo.svg" alt="PhotoSnap Logo"></a>
+    </div>
+    <div id="menuIcon" onclick="menuToggle()">
+      <img src="assets/shared/mobile/menu.svg" alt="">
+    </div>
+    <div id="dropMenu">
+      <a href="stories.html">STORIES</a>
+      <a href="features.html">FEATURES</a>
+      <a href="pricing.html">PRICING</a>
+    </div>
+  </nav>
+
+  <section id="aboutSection">
+    <div class="about">
+      <div class="info rainbow">
+        <div id="rainbowBar"></div>
+        <h1>
+          PRICING.
+        </h1>
+        <p>
+          Create your stories, PhotoSnap is a platform for photographers and visual storytellers. Its the simple
+          way to create and share your photos.
+        </p>
+        <br>
+        <div class="link">
+          <p>
+            GET AN INVITE
+          </p>
+          <img src="assets/shared/desktop/arrow-white.svg" alt="">
+        </div>
+      </div>
+      <div id="aboutImageOne"></div>
+    </div>
+  </section>
+
+  <section id="priceSection">
+      <div id="switchRow">
+            <h3>Monthly</h3>
+            <label class="switch">
+                <input type="checkbox" id="priceToggle" onclick="priceToggle()">
+                <span class="slider round"></span>
+            </label>
+            <h3>Yearly</h3>
+      </div>
+
+          <div id="priceBlockRow" >
+
+          <div class="priceBlock" onmouseover="displayRainbow(0)" onmouseout="hideRainbow(0)">
+            <div class="rainbowBar"></div>
+            <h2>Basic</h2>
+            <p>
+              Includes basic usage of our platform.
+              Recommended for new and aspiring 
+              photographers.
+            </p>
+            <h1 id="basicPrice">$19.00</h1>
+            <p class="term">per month</p>
+            <button>PICK PLAN</button>
+          </div>
+
+          <div class="priceBlock" onmouseover="displayRainbow(1)" onmouseout="hideRainbow(1)">
+            <div class="rainbowBar"></div>
+            <h2>Pro</h2>
+            <p>
+              More advanced features available. Recommended for 
+              photography veterans and 
+              professionals. 
+            </p>
+            <h1 id="proPrice">$39.00</h1>
+            <p class="term">per month</p>
+            <button>PICK PLAN</button>
+          </div>
+
+          <div class="priceBlock" onmouseover="displayRainbow(2)" onmouseout="hideRainbow(2)">
+            <div class="rainbowBar"></div>
+            <h2>Business</h2>
+            <p>
+              Additional features available such as
+              more detailed metrics. Recommended for business
+              owners 
+            </p>
+            <h1 id="businessPrice">$99.00</h1>
+            <p class="term">per month</p>
+            <button>PICK PLAN</button>
+          </div>
+      </div>
+  </section>
+
+  <section id="compare">
+    <h1>COMPARE</h1>
+    <div class="compareRow">
+      <div class="featureCol title"><p>THE FEATURES</p></div>
+      <div class="basicCol title"><p>BASIC</p></div>
+      <div class="proCol title"><p>PRO</p></div>
+      <div class="businessCol title"><p>BUSINESS</p></div>
+    </div>
+    <div class="compareRow">
+      <div class="featureCol title"><p>UNLIMITED STORY POSTING</p></div>
+      <div class="basicCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+      <div class="proCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+      <div class="businessCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+    </div>
+    <div class="compareRow">
+      <div class="featureCol title"><p>UNLIMITED PHOTO UPLOAD</p></div>
+      <div class="basicCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+      <div class="proCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+      <div class="businessCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+    </div>
+    <div class="compareRow">
+      <div class="featureCol title"><p>EMBEDDING CUSTOM CONTENT</p></div>
+      <div class="basicCol title"></div>
+      <div class="proCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+      <div class="businessCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+    </div>
+    <div class="compareRow">
+      <div class="featureCol title"><p>CUSTOMIZE METADATA</p></div>
+      <div class="basicCol title"></div>
+      <div class="proCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+      <div class="businessCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+    </div>
+    <div class="compareRow">
+      <div class="featureCol title"><p>ADVANCED METRICS</p></div>
+      <div class="basicCol title"></div>
+      <div class="proCol title"></div>
+      <div class="businessCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+    </div>
+    <div class="compareRow">
+      <div class="featureCol title"><p>PHOTO DOWNLOADS</p></div>
+      <div class="basicCol title"></div>
+      <div class="proCol title"></div>
+      <div class="businessCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+    </div>
+    <div class="compareRow">
+      <div class="featureCol title"><p>SEARCH ENGINE INDEXING</p></div>
+      <div class="basicCol title"></div>
+      <div class="proCol title"></div>
+      <div class="businessCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+    </div>
+    <div class="compareRow">
+      <div class="featureCol title"><p>CUSTOM ANALYTICS</p></div>
+      <div class="basicCol title"></div>
+      <div class="proCol title"></div>
+      <div class="businessCol title"><img src="assets/pricing/desktop/check.svg" alt="check"></div>
+    </div>
+  </section>
+
+
+
+  <section class="featuresCallToAction">
+    <div class="featuresCallToActionTitle">
+      <div class="featuresRainbowBar"></div>
+      <h1>WE'RE IN BETA. GET YOUR INVITE TODAY.</h1>
+    </div>
+    <div class="featuresCallToActionLink">
+      <div class="link">
+      <p>
+        GET AN INVITE
+      </p>
+      <img src="assets/shared/desktop/arrow-white.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="footer">
+
+    <div class="footerCol left">
+      <div id="logo">
+        <img src="assets/shared/desktop/logo-white.svg" alt="Photo Snap Logo">
+      </div>
+      <div id="miniNav">
+        <p>HOME</p>
+        <p>STORIES</p>
+        <p>FEATURES</p>
+        <p>PRICING</p>
+      </div>
+      <div id="social">
+        <img src="assets/shared/desktop/facebook.svg" alt="Facebook social icon">
+        <img src="assets/shared/desktop/youtube.svg" alt="Youtube social icon">
+        <img src="assets/shared/desktop/twitter.svg" alt="Twitter social icon">
+        <img src="assets/shared/desktop/pinterest.svg" alt="Pinterest social icon">
+        <img src="assets/shared/desktop/instagram.svg" alt="Instagram social icon">
+      </div>
+    </div>
+
+    <div class="footerCol right">
+      <div id="footerLink">
+        <!--
+        <div class="link">
+          <p>
+            GET AN INVITE
+          </p>
+          <img src="assets/shared/desktop/arrow-white.svg" alt="">
+        </div>
+        -->
+      </div>
+      <div id="copyright">
+        <p>Copyright 2019. All Rights Reserved</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+
+function priceToggle() {
+  // Get the checkbox
+  var checkBox = document.getElementById("priceToggle");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    document.getElementById("basicPrice").innerHTML = "$190.00";
+    document.getElementById("proPrice").innerHTML = "$390.00";
+    document.getElementById("businessPrice").innerHTML = "$990.00";
+
+    var x = document.getElementsByClassName("term");
+    var i;
+
+    for(i= 0; i <= x.length; i++){
+      document.getElementsByClassName("term")[i].innerHTML = "per year";
+    }
+
+  } else {
+    document.getElementById("basicPrice").innerHTML = "$19.00";
+    document.getElementById("proPrice").innerHTML = "$39.00";
+    document.getElementById("businessPrice").innerHTML = "$99.00";
+    document.getElementsByClassName("term").innerHTML = "per month"
+    var x = document.getElementsByClassName("term");
+    var i;
+
+    for(i= 0; i <= x.length; i++){
+      document.getElementsByClassName("term")[i].innerHTML = "per month";
+    }
+  }
+}
+
+
+    function menuToggle() {
+      var x = document.getElementById("dropMenu");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+
+    function displayRainbow(x){
+      var y = document.getElementsByClassName("rainbowBar")[x];
+      y.style.display = "block";
+    }
+
+    function hideRainbow(x){
+      var y = document.getElementsByClassName("rainbowBar")[x];
+      y.style.display = "none";
+    }
+
+
+    
+  </script>
+  
+</body>
+</html>

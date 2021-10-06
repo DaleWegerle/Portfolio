@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Huddle</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+
+<body>
+  <!--document.getElementById('modalContainer').style.visibility='hidden'-->
+  <section id="modalContainer" class="">
+    <div id="modalContent" class="animate__fadeIn">
+      <div id="close">
+          <img src="images/close-icon.png" alt="Close Icon" onclick="hide()">
+      </div>
+      <h2>Reserve A Spot</h2>
+        <input type="text" name="name" placeholder="name"><br>
+        <input type="email" name="email" placeholder="email"><br>
+      <div id="modalButton" onclick="hide()">Register</div>
+    </div>
+  </section>
+
+  <section id="logo">
+    <img src="images/logo.svg" alt="">
+  </section>
+
+  <section id="content">
+      <section id="image">
+        <img src="images/illustration-mockups.svg" alt="Huddle Application Mockup">
+      </section>
+      <section id="info">
+        <h1 class="animate__animated animate__bounce">Build The Community Your Fans Will Love</h1>
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+          Create connections with your users as you engage with genuine discussion. 
+        </p>
+        <button  onclick="show()">Register</button>
+      </section>
+  </section>
+
+  <section id="footer">
+    <img class="icons" src="images/facebook-icon.png" alt="facebook Icon">
+    <img class="icons" src="images/instagram-icon.png" alt="Instagram Icon">
+    <img class="icons" src="images/twitter-icon.png" alt="Twitter Icon">
+  </section>
+
+  <script>
+      // Get the modal
+      var modal = document.getElementById('modalContainer');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+       if (event.target == modal) {
+         modal.style.visibility = 'hidden';
+         modal.classList.remove("fade-in");
+       }
+      }
+
+      function show(){
+        modal.style.visibility = 'visible';
+        modal.classList.add("fade-in");
+      }
+
+      function hide(){
+        modal.style.visibility = 'hidden';
+        modal.classList.remove("fade-in");
+      }
+
+  </script>
+
+</body>
+</html>

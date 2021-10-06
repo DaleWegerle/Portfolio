@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 12px;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#topNav{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    z-index: 999;
+}
+
+.navItem{
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+
+.navItem a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 10px;
+    border-bottom: 0px ;
+ 
+}
+
+.navItem a:hover{
+    border-bottom: 2px #ffffff solid;
+    transition: border-bottom 0.5s ease-in;
+}
+
+#top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#topImage{
+    background-size: cover;
+    background-color: #444444;
+    width: 55vw;
+    height: 65vh; 
+    position: relative;  
+}
+
+#arrowNavMobile{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10vw;
+    height: 10vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    visibility: hidden;
+}
+
+#topInfo{
+    width: 45vw;
+    height: 65vh;
+    background-color: #ffffff;
+    padding: 100px;
+    position: relative;
+}
+
+.info-1{
+    position: absolute;
+    visibility: hidden;
+}
+
+.info-2{
+    position: absolute;
+    visibility: hidden;
+}
+
+.info-3{
+    position: absolute;
+    visibility: hidden;
+}
+
+#arrowNav{
+    width: 10vw;
+    height: 10vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+.arrow{
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.arrow:hover{
+    cursor: pointer;
+    background-color: #444444;
+
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    margin-top: 30px;
+    color: #8b8b8b;
+    line-height: 22px;
+}
+
+h2{
+    font-size: 16px;
+    margin-top: 30px;
+    color: #8b8b8b;
+    letter-spacing: 12px;
+    font-weight: 500;
+}
+
+#bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#leftImage{
+    width: 30vw;
+    height: 35vh;
+    background-color: grey;
+    background-image: url("images/image-about-dark.jpg");
+    background-size: cover;
+}
+
+#bottomInfo{
+    width: 40vw;
+    height: 35vh;
+    background-color: #ffffff;
+    padding: 40px;
+    
+}
+
+h3{
+    letter-spacing: 5px;
+}
+
+
+#rightImage{
+    width: 30vw;
+    height: 35vh;
+    background-color: grey;
+    background-image: url("images/image-about-light.jpg");
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    
+body{
+    width: 100vw;
+    height: auto;
+}
+
+#top{
+    width: 100%;
+    flex-direction: column;
+}
+
+#topNav{
+    display: none;
+}
+
+#topImageMobile{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+
+#topImage{
+    visibility: hidden;
+}
+
+
+}

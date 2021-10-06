@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Splitter</title>
+</head>
+
+<body>
+  <div class="logoContainer">
+    <img src="images/logo.svg" alt="Splitter Logo">
+  </div>  
+
+  <div class="formContainer">
+    <div class="formBlock input">
+
+      <section class="billContainer">
+        <label for="bill">Bill</label><br>
+        <input type="text" name="bill" id="billInput">
+      </section>  
+
+      <section class="buttonContainer">
+        <label for="buttons" id="tip">Select Tip %</label><br>
+        <button value="5%">5%</button>
+        <button value="10%">10%</button>
+        <button value="15%">15%</button>
+        <button value="25%">25%</button>
+        <button value="50%">50%</button>
+        <!--<input id="customInput" type="text" name="custom" value="custom" placeholder="custom">-->
+      </section> 
+      
+      <section class="peopleContainer">
+        <label for="people">Number Of People</label><br>
+        <input type="text" name="people" id="peopleInput">
+      </section>  
+      
+    </div>
+
+    <div class="formBlock output">
+
+      <section class="outputSection">
+        <div class="tipTitle">
+          <p>Tip Amount<br><span>/ person</span></p>
+        </div>
+        <div class="tipOutput">
+          <h1>$00.00</h1>
+        </div>
+      </section>
+
+      <section class="outputSection">
+        <div class="tipTitle">
+          <p>Total<br><span>/ person</span></p>
+        </div>
+        <div class="tipOutput">
+          <h1>$00.00</h1>
+        </div>
+      </section>
+
+      <section>
+        <button id="resetButton">RESET</button>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,735 @@
+body{
+    font-family: 'DM Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+h4{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0;
+}
+
+p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.link p{
+    margin-right: 5%;
+}
+
+.link p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*
+
+*****  NAVIGATION  *****
+
+*/
+
+#mobile{
+    display: none;
+}
+
+#desktop{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1.5% 1%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#desktop img{
+    width: 200px;
+}
+
+.side button{
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    padding: 3% 6%;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.side button:hover{
+    border: none;
+    background-color: #dfdfdf;
+    color: #000000;
+    font-family: 'DM Sans', sans-serif;
+    padding: 3% 6%;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.side{
+    width: 33.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.side img{
+    width: 80%;
+    max-width: 200px;
+}
+
+#middle{
+    width: 33.3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#middle a{
+    font-size: 1vw;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 5%;
+    text-decoration: none;
+    color: #000000;
+}
+
+#middle a:hover{
+    cursor: pointer;
+    color: #dfdfdf;;
+}
+
+/*
+
+**** INTRO ****
+
+*/
+
+#intro{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background-image: url("assets/stories/desktop/moon-of-appalacia.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 5% 10%;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+#introGradient{
+    display: block;
+    border-radius: 50%;
+    width: 75%;
+    height: 170%;
+    position: absolute;
+    bottom: -450px;
+    left: -450px;
+    z-index: 999;
+    transition: 1s;
+}
+
+#introGradient:hover{
+    background-image: radial-gradient(#ffc59371, #bc71985e, #5a78ff00, #000000); 
+    mix-blend-mode: lighten;
+}
+
+#introContent{
+    box-sizing: border-box;
+    max-width: 375px;
+    z-index: 999;
+    mix-blend-mode: lighten;
+}
+
+#introContent p{
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+
+#introContent h4{
+    letter-spacing: 1.5px;
+    font-weight: 300;
+}
+
+#introContent .grey p{
+    color: #dfdfdf;
+}
+
+/*
+
+**** STORIES
+
+*/
+
+#stories{
+    width: 100%;
+    height: 47vw;
+    max-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000000;
+    position: relative;
+}
+
+.storyTile{
+    width: 25%;
+    padding-top: 25.5%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.storyContent{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0));
+}
+
+.storyContent h3,p{
+    margin: 0;
+}
+
+.storyContent p{
+    font-size: 13px;
+}
+
+.storyContent hr{
+    width: 100%;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    border-top: 0.5px solid #ffffff;
+}
+
+#mountain{
+    background-image: url("assets/stories/desktop/mountains.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+}
+
+#mountain:hover{
+    top: -25px;
+    border-bottom: #5A77FF 8px solid;
+}
+
+#city{
+    background-image: url("assets/stories/desktop/cityscapes.jpg");
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transition: top 0.3s;
+}
+
+#city:hover{
+    top: -25px;
+    border-bottom: #BC7198 8px solid;
+}
+
+#voyage{
+    background-image: url("assets/stories/desktop/18-days-voyage.jpg");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: top 0.3s;
+}
+
+#voyage:hover{
+    top: -25px;
+    border-bottom: #FFC593 8px solid;
+}
+
+#architect{
+    background-image: url("assets/stories/desktop/architecturals.jpg");
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transition: top 0.3s;
+}
+
+#architect:hover{
+    top: -25px;
+    border-bottom: #dfdfdf 8px solid; 
+    transition: top 0.3s;
+
+}
+
+#worldTour{
+    background-image: url("assets/stories/desktop/world-tour.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+}
+
+#worldTour:hover{
+    top: -25px;
+    border-bottom: #5A77FF 8px solid;
+}
+
+#unforseenCorners{
+    background-image: url("assets/stories/desktop/unforeseen-corners.jpg");
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transition: top 0.3s;
+}
+
+#unforseenCorners:hover{
+    top: -25px;
+    border-bottom: #BC7198 8px solid;
+}
+
+#kingOnAfrica{
+    background-image: url("assets/stories/desktop/king-on-africa.jpg");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: top 0.3s;
+}
+
+#kingOnAfrica:hover{
+    top: -25px;
+    border-bottom: #FFC593 8px solid;
+}
+
+#tripToNowhere{
+    background-image: url("assets/stories/desktop/trip-to-nowhere.jpg");
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transition: top 0.3s;
+}
+
+#tripToNowhere:hover{
+    top: -25px;
+    border-bottom: #dfdfdf 8px solid;  
+    transition: top 0.3s;
+
+}
+
+#rageOfTheSea{
+    background-image: url("assets/stories/desktop/rage-of-the-sea.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+}
+
+#rageOfTheSea:hover{
+    top: -25px;
+    border-bottom: #5A77FF 8px solid;
+}
+
+#runningFree{
+    background-image: url("assets/stories/desktop/running-free.jpg");
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transition: top 0.3s;
+}
+
+#runningFree:hover{
+    top: -25px;
+    border-bottom: #BC7198 8px solid;
+}
+
+#behindTheWaves{
+    background-image: url("assets/stories/desktop/behind-the-waves.jpg");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: top 0.3s;
+}
+
+#behindTheWaves:hover{
+    top: -25px;
+    border-bottom: #FFC593 8px solid;
+}
+
+#calmWaters{
+    background-image: url("assets/stories/desktop/calm-waters.jpg");
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transition: top 0.3s;
+}
+
+#calmWaters:hover{
+    top: -25px;
+    border-bottom: #dfdfdf 8px solid;
+    transition: top 0.3s;
+}
+
+#theMilkyWay{
+    background-image: url("assets/stories/desktop/milky-way.jpg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
+}
+
+#theMilkyWay:hover{
+    top: -25px;
+    border-bottom: #5A77FF 8px solid;
+}
+
+#nightAtTheDarkForest{
+    background-image: url("assets/stories/desktop/dark-forest.jpg");
+    position: absolute;
+    top: 0;
+    left: 25%;
+    transition: top 0.3s;
+}
+
+#nightAtTheDarkForest:hover{
+    top: -25px;
+    border-bottom: #BC7198 8px solid;
+}
+
+#somwarpetsBeauty{
+    background-image: url("assets/stories/desktop/somwarpet.jpg");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: top 0.3s;
+}
+
+#somwarpetsBeauty:hover{
+    top: -25px;
+    border-bottom: #FFC593 8px solid;
+}
+
+#landOfDreams{
+    background-image: url("assets/stories/desktop/land-of-dreams.jpg");
+    position: absolute;
+    top: 0;
+    left: 75%;
+    transition: top 0.3s;
+}
+
+#landOfDreams:hover{
+    top: -25px;
+    border-bottom: #dfdfdf 8px solid;   
+    transition: top 0.3s;
+
+}
+
+
+/*
+
+**** FOOTER ****
+
+*/
+
+
+#footer{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 10%;
+    background-color: #000000;
+}
+
+.footerCol{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left{
+    text-align: left;
+}
+
+.right{
+    text-align: right;
+}
+
+.footerCol #logo{
+    margin-bottom: 5%;
+}
+
+.footerCol #miniNav{
+    color: #ffffff;
+    margin-bottom: 10%;
+}
+
+.footerCol #miniNav p{
+    margin-right: 4%;
+    font-size: 1vw;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footerCol #social img{
+    margin-right: 3%;
+    fill: #ffffff;
+}
+
+.footerCol #footerLink,#copyright p{
+    color: #ffffff;
+    font-size: 1vw;
+}
+
+.footerCol #footerLink{
+    margin-bottom: 12%;
+}
+
+#footerLink{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;   
+}
+
+#miniNav{
+    display: flex;
+    flex-direction: row;
+}
+
+#social{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+
+#stories{
+    position: unset;
+    height: auto;
+    max-height: unset;
+}
+
+.storyTile{
+    width: 50%;
+    padding-top: 51%;
+}
+
+#mountain{
+    position: unset;
+}
+
+#city{
+    position: unset;
+}
+
+#voyage{
+    position: unset;
+}
+
+#architect{
+    position: unset;
+}
+
+#worldTour{
+    position: unset;
+}
+
+#unforseenCorners{
+    position: unset;
+}
+
+#kingOnAfrica{
+    position: unset;
+}
+
+#tripToNowhere{
+    position: unset;
+}
+
+#rageOfTheSea{
+    position: unset;
+}
+
+#runningFree{
+    position: unset;
+}
+
+#behindTheWaves{
+    position: unset;
+}
+
+#calmWaters{
+    position: unset;
+}
+
+#theMilkyWay{
+    position: unset;
+}
+
+#nightAtTheDarkForest{
+    position: unset;
+}
+
+#somwarpetsBeauty{
+    position: unset;
+}
+
+#landOfDreams{
+    position: unset;
+}
+
+}
+
+@media only screen and (max-width: 375px){
+    #desktop{
+        display: none;
+    }
+    
+    #mobile{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #ffffff;
+    }
+    
+    nav #logo{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    nav #logo img{
+        width: 70%;
+    }
+    
+    nav #menuIcon{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    nav #menuIcon img{
+        width: 25%;
+    }
+    
+    nav #dropMenu{
+        width: 100%;
+        margin-top: 10%;
+        text-align: center;
+        display: none;
+    }
+    
+    nav #dropMenu p{
+        margin-bottom: 5%;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .storyTile{
+        width: 100%;
+        padding-top: 102%;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+    
+    .footerCol{
+        width: 100%;
+    }
+    
+    .left {
+        text-align: center;
+        
+    }
+    
+    .left img{
+        margin-bottom: 20px;
+    }
+    
+    .right {
+        text-align: center;
+    }
+    
+    #miniNav{
+        flex-direction: column;
+    }
+    
+    .footerCol #miniNav p{
+        margin-bottom: 4%;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    
+    .footerCol #footerLink,#copyright p{
+        color: #ffffff;
+        font-size: 12px;
+        
+    }
+    
+    #social{
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    #footerLink{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;   
+    }
+    
+}
