@@ -135,7 +135,7 @@ p{
 
 #middle a:hover{
     cursor: pointer;
-    color: #dfdfdf;;
+    color: #BC7198;
 }
 
 /*
@@ -502,11 +502,13 @@ p{
     margin-bottom: 10%;
 }
 
-.footerCol #miniNav p{
+.footerCol #miniNav a{
     margin-right: 4%;
     font-size: 1vw;
     font-weight: 700;
     letter-spacing: 2px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .footerCol #social img{
