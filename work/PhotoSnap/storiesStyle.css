@@ -548,6 +548,82 @@ p{
 
 @media only screen and (max-width: 768px){
 
+    #desktop{
+        display: none;
+    }
+    
+    #mobile{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        position: sticky;
+        top: 0;
+        z-index: 9999;
+        background-color: #ffffff;
+    }
+    
+    #topBar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #topBar #logo{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    #topBar #logo img{
+        width: 100%;
+        min-width: 150px;
+    }
+    
+    #topBar #menuIcon{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    #topBar #menuIcon img{
+        width: 30px;
+    }
+    
+    nav #dropMenu{
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+        display: none;
+    }
+    
+    nav #linkCol{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav #dropMenu a{
+        width: 100%;
+        margin-bottom: 5%;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #696969;
+    }
+    
+    #intro{
+        position: absolute;
+        z-index: 999;
+    }
+    
+
 #stories{
     position: unset;
     height: auto;
@@ -623,115 +699,85 @@ p{
     position: unset;
 }
 
+/*
+
+**** FOOTERS ****
+
+*/
+
+#footer{
+    flex-direction: column;
+}
+
+.footerCol{
+    width: 100%;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.left img{
+    margin-bottom: 20px;
+}
+
+.right {
+    text-align: center;
+}
+
+#miniNav{
+    flex-direction: column;
+}
+
+.footerCol #miniNav a{
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footerCol #footerLink,#copyright p{
+    color: #ffffff;
+    font-size: 12px;
+    
+}
+
+#social {
+    width: 100%;
+    max-width: 300px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#footerLink{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+
+#footerLink .link{
+    width: 180px;  
+}
+
+#footerLink .link img{
+    width: 50px;
+}
+
 }
 
 @media only screen and (max-width: 375px){
-    #desktop{
-        display: none;
-    }
     
-    #mobile{
-        box-sizing: border-box;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 5%;
-        position: sticky;
-        top: 0;
-        z-index: 999;
-        background-color: #ffffff;
-    }
-    
-    nav #logo{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-    }
-    
-    nav #logo img{
-        width: 70%;
-    }
-    
-    nav #menuIcon{
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: center;
-    }
-    
-    nav #menuIcon img{
-        width: 25%;
-    }
-    
-    nav #dropMenu{
-        width: 100%;
-        margin-top: 10%;
-        text-align: center;
-        display: none;
-    }
-    
-    nav #dropMenu p{
-        margin-bottom: 5%;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
 
     .storyTile{
         width: 100%;
         padding-top: 102%;
-    }
-
-    #footer{
-        flex-direction: column;
-    }
-    
-    .footerCol{
-        width: 100%;
-    }
-    
-    .left {
-        text-align: center;
-        
-    }
-    
-    .left img{
-        margin-bottom: 20px;
-    }
-    
-    .right {
-        text-align: center;
-    }
-    
-    #miniNav{
-        flex-direction: column;
-    }
-    
-    .footerCol #miniNav p{
-        margin-bottom: 4%;
-        font-size: 12px;
-        font-weight: 700;
-        letter-spacing: 2px;
-    }
-    
-    .footerCol #footerLink,#copyright p{
-        color: #ffffff;
-        font-size: 12px;
-        
-    }
-    
-    #social{
-        justify-content: space-around;
-        margin-bottom: 20px;
-    }
-    
-    #footerLink{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;   
     }
     
 }
