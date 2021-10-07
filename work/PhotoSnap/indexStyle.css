@@ -420,6 +420,14 @@ p{
     align-items: flex-end;   
 }
 
+#footerLink .link{
+    width: 180px;  
+}
+
+#footerLink .link img{
+    width: 50px;
+}
+
 #miniNav{
     display: flex;
     flex-direction: row;

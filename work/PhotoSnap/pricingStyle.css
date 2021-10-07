@@ -504,16 +504,25 @@ p{
     font-size: 1vw;
     font-weight: 700;
     letter-spacing: 2px;
-    text-decoration: none;
     color: #ffffff;
+    text-decoration: none;
+}
+
+.footerCol #miniNav a:hover{
+    cursor: pointer;
 }
 
 .footerCol #social img{
     margin-right: 3%;
-    fill: #ffffff;
+    
 }
 
-.footerCol #footerLink,#copyright p{
+.footerCol #footerLink,#copyright a{
+    color: #ffffff;
+    font-size: 1vw;
+}
+
+#copyright p{
     color: #ffffff;
     font-size: 1vw;
 }
@@ -530,14 +539,26 @@ p{
     align-items: flex-end;   
 }
 
+#footerLink .link{
+    width: 180px;  
+}
+
+#footerLink .link img{
+    width: 50px;
+}
+
 #miniNav{
     display: flex;
     flex-direction: row;
 }
 
 #social{
+    box-sizing: border-box;
+    width: 50%;
+    min-width: 200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
