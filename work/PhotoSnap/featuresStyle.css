@@ -365,6 +365,7 @@ p{
     width: 50px;
 }
 
+
 #miniNav{
     display: flex;
     flex-direction: row;
@@ -380,93 +381,81 @@ p{
 }
 
 @media only screen and (max-width: 768px) {
-    
 
-#desktop{
-    display: none;
-}
-
-#mobile{
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    background-color: #ffffff;
-}
-
-#topBar{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-#topBar #logo{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
-
-#topBar #logo img{
-    width: 100%;
-    min-width: 150px;
-}
-
-#topBar #menuIcon{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-#topBar #menuIcon img{
-    width: 30px;
-}
-
-nav #dropMenu{
-    width: 100%;
-    height: auto;
-    margin-top: 10%;
-    display: none;
-}
-
-nav #linkCol{
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-nav #dropMenu a{
-    width: 100%;
-    margin-bottom: 5%;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-decoration: none;
-    color: #696969;
-}
-
-#intro{
-    position: absolute;
-    z-index: 999;
-}
-
-    .featureBlock{
-        width: 50%;
-        height: 400px;
+    #desktop{
+        display: none;
     }
-
-    .featuresCallToActionTitle h1{
-        font-size: 28px;
-        line-height: 36px;
-    }   
-}
+    
+    #mobile{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #ffffff;
+    }
+    
+    #topBar{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #topBar #logo{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    #topBar #logo img{
+        width: 100%;
+        min-width: 150px;
+    }
+    
+    #topBar #menuIcon{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    #topBar #menuIcon img{
+        width: 30px;
+    }
+    
+    nav #dropMenu{
+        width: 100%;
+        height: auto;
+        margin-top: 10%;
+        display: none;
+    }
+    
+    nav #linkCol{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav #dropMenu a{
+        width: 100%;
+        margin-bottom: 5%;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-decoration: none;
+        color: #696969;
+    }
+    
+    #intro{
+        position: absolute;
+        z-index: 999;
+    }
 
 /*
 
@@ -538,6 +527,19 @@ nav #dropMenu a{
 #footerLink .link img{
     width: 50px;
 }
+
+
+    .featureBlock{
+        width: 50%;
+        height: 400px;
+    }
+
+    .featuresCallToActionTitle h1{
+        font-size: 28px;
+        line-height: 36px;
+    }   
+}
+
 
 @media only screen and (max-width: 425px){
 
