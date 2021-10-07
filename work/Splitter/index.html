@@ -29,13 +29,13 @@
       </section>  
 
       <section class="buttonContainer">
-        <label for="buttons" id="tip">Select Tip %</label><br>
-        <button value="5%">5%</button>
-        <button value="10%">10%</button>
-        <button value="15%">15%</button>
-        <button value="25%">25%</button>
-        <button value="50%">50%</button>
-        <!--<input id="customInput" type="text" name="custom" value="custom" placeholder="custom">-->
+          <label for="buttons" id="tip">Select Tip %</label><br>
+          <button class="tipButton" value="5%" onclick="addTip(0.05, 0)">5%</button>
+          <button class="tipButton" value="10%" onclick="addTip(0.1,1)">10%</button>
+          <button class="tipButton" value="15%" onclick="addTip(0.15,2)">15%</button>
+          <button class="tipButton" value="25%" onclick="addTip(0.25,3)">25%</button>
+          <button class="tipButton" value="50%" onclick="addTip(0.5,4)">50%</button>
+          <!--<input id="customInput" type="text" name="custom" value="custom" placeholder="custom">-->
       </section> 
       
       <section class="peopleContainer">
@@ -66,7 +66,8 @@
       </section>
 
       <section>
-        <button id="resetButton">RESET</button>
+        <button id="calculateButton" onclick="calculateTip()">CALCULATE</button>
+        <button id="resetButton" onclick="test()">RESET</button>
       </section>
 
     </div>
