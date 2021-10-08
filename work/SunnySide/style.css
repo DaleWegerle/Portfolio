@@ -1,0 +1,527 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: cornflowerblue;
+    font-family: 'barlow';
+    font-weight: 600;
+    width: 100%;
+}
+
+h2, h3{
+    font-family: 'fraunces';
+}
+
+.navPosition{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.contNav{
+    background-color: #3dbeff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5%; 
+}
+
+
+.logoSpace{
+    width: 50%;
+  
+}
+
+.linkSpace{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  
+}
+
+.linkSpace a{
+    display: none;
+    text-decoration: none;
+    
+}
+
+.linkSpace .icon{
+    display: flex;
+    margin-right: 0;
+    color: #ffffff;
+
+}
+
+.linkSpace .icon :hover{
+    color: yellow;
+}
+
+.visCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     
+}
+  
+.hidden{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 90%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+      
+}
+
+.hidden a{
+    display: initial;
+    padding: 16px;
+    text-decoration: none;
+    color: grey;
+      
+}
+
+.trianglePosition{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: 25px;
+}
+
+.triangle{
+    top: 25px;
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 50px solid white;
+    border-bottom: 25px solid transparent;
+        
+}
+
+.hiddenCont{
+    display: none;
+    z-index: 10;
+}
+
+.contentBody {
+    width: 100%;
+}
+
+.headerBannerOrange{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    width: 100%;
+    height: 700px;
+    background-image: url("images/mobile/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+
+.headerBannerContent{
+    top: 25%;
+    z-index: 1;
+}
+
+.headerTitle{
+    font-family: 'fraunces';
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    letter-spacing: 0.3vw;
+    text-align: center;
+    z-index: 0;
+}
+
+.downArrow{
+    width: 20px;
+    z-index: 0;
+}
+
+.space{
+    width: 100%;
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+
+}
+
+.imageBlock{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.Egg{
+    background-image: url("images/mobile/image-transform.jpg");
+    height: 404px;
+}
+
+.Cup{
+    background-image: url("images/mobile/image-stand-out.jpg");
+    height: 400px;
+}
+
+.infoBlock{
+    background-color: white;
+    color: #2b2b2b;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoBlock h2{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.infoBlock p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    
+
+}
+
+.infoBlock a{
+    font-family: 'fraunces';
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+.infoBlockBackground{
+    background-image: url("images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+    background-position: center;
+    color: hsl(167, 40%, 24%); 
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 400px;
+}
+
+.infoBlockBackground h2{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;  
+}
+
+.infoBlockBackground p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.infoBlockBackgroundOrange{
+    background-image: url("images/mobile/image-photography.jpg");
+    background-size: cover;
+    background-position: center;
+    color: hsl(198, 62%, 26%); 
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 400px;
+}
+
+.infoBlockBackgroundOrange h2{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;  
+}
+
+.infoBlockBackgroundOrange p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+
+.testiCont{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.testiTitle{
+    color: grey;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 100px;
+}
+
+.testiTile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2b2b2b;
+}
+.testiTile p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.testiTile .clientPics{
+    border-radius: 50%;
+}
+
+.testiName{
+    color: #2b2b2b;
+    font-size: 25px;
+    font-weight: 700; 
+    margin-bottom: 2px;
+}
+
+.testiPosition{
+    color: grey;
+    margin-top: 2px;
+    margin-bottom: 100px;
+}
+
+.imageTile{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile{
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 250px;
+}
+
+.Milk{
+    background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+}
+
+.Cone{
+    background-image: url("images/mobile/image-gallery-cone.jpg");
+}
+
+.Sugar{
+    background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+}
+
+.Orange{
+    background-image: url("images/mobile/image-gallery-orange.jpg");
+}
+
+.footer{
+    width: 100%;
+    background-color: #90d4c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+.footerLogo{
+    padding-top: 10%;
+    padding-bottom: 5%;
+    
+}
+
+.footerLinks{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.footerSocial{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 600px) {
+    .contNav{
+        padding: 3%; 
+    }
+    
+    .hidden{
+        width: 94%;
+    }
+    
+    .trianglePosition{
+        width: 94%;
+    }
+    
+    .tile{
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 768px){
+  
+    .visCont{
+        display: none;
+    }
+    .contNav{
+        padding: 2%; 
+    }
+    .linkSpace a{
+        display: flex;
+        margin-left: 10%;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .linkSpace .icon{
+        display: none;
+    }
+
+    .headerBannerOrange{
+        background-image: url("images/desktop/image-header.jpg");
+        height: 800px;
+        
+    }
+
+    .space{
+        height: 800px;
+    }
+
+    .flexGrid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imageBlock{
+        width: 50%;
+        height: 600px;
+    }
+    .infoBlock{
+        width: 50%;
+        box-sizing: border-box;
+        padding: 8%;
+        align-items: flex-start;
+        justify-content: left;
+
+    }
+
+    .infoBlock p{
+        text-align: left;
+    }
+
+    .infoBlock h2{
+        text-align: left;
+    }
+    .Transform{
+        order: 1;
+    }
+    .Egg{
+        background-image: url("images/desktop/image-transform.jpg");
+        order: 2;
+    }
+    
+    .Cup{
+        background-image: url("images/desktop/image-stand-out.jpg");
+        order: 3;
+    }
+    .Stand{
+        order: 4;
+    }
+
+    .infoBlockBackground{
+        background-image: url("images/desktop/image-graphic-design.jpg");
+        box-sizing: border-box;
+        width: 50%;
+        height: 600px;
+        order: 5;
+        
+    }
+    .infoBlockBackgroundOrange{
+        background-image: url("images/desktop/image-photography.jpg");
+        box-sizing: border-box;
+        width: 50%;
+        height: 600px;
+        order: 6;
+    }
+
+    .testiCont{
+        padding: 2%;
+    }
+    
+    .testiTile{
+        width: 33.3%;
+        padding: 5%;
+    }
+
+    .testiRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testiTitle{
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .testiPosition{
+        margin-bottom: 10px;
+    }
+
+    .tile{
+        width: 25%;
+    }
+
+    .footerLogo{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        
+    }
+
+    .footerLinks{
+        width: 40%;
+    }
+
+    .footerSocial{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 40%;
+    }
+    
+}
