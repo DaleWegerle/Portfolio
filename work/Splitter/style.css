@@ -22,13 +22,13 @@ body{
 }
 
 .logoContainer img{
-    width: 6%;
+    width: 100px;
     height: auto;
 }
 
 .formContainer{
     box-sizing: border-box;
-    width: 60%;
+    width: 900px;
     height: auto;
     background-color: #ffffff;
     border-radius: 25px;
@@ -37,6 +37,7 @@ body{
     flex-direction: row;
     justify-content: center;
     box-shadow: 10px 10px 50px #aee0da;
+    margin-bottom: 200px;
 }
 
 .formBlock{
@@ -57,6 +58,9 @@ body{
    margin-right: 2.5%;
    margin-left: 0;
    box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
 }
 
 input{
@@ -87,7 +91,7 @@ button{
     border: none;
     width: 30%;
     font-family: 'Space Mono', monospace;
-    font-size: 1.5vw;
+    font-size: 24px;
     margin: 5px 0px 5px 0px;
     padding: 5px 0px 5px 0px;
     border-radius: 7px;
@@ -95,15 +99,9 @@ button{
 
 button:hover{
     cursor: pointer;
+    background-color: #26c2ad;
 }
 
-.billContainer{
-    margin-bottom: 50px;
-}
-
-.buttonContainer{
-    margin-bottom: 50px;
-}
 
 #billInput{
     background-image: url("images/icon-dollar.svg"); 
@@ -125,6 +123,7 @@ button:hover{
 }
 
 .tipTitle p{
+    font-size: 16px;
     color: #ffffff;
 
 }
@@ -137,7 +136,7 @@ button:hover{
 
 .tipOutput h1{
     color: #26c2ad;
-    font-size: 2.5vw;
+    font-size: 36px;
     margin: 0;
 }
 
@@ -152,7 +151,7 @@ span{
     font-size: 16px;
     align-self: flex-end;
     padding: 15px;
-    margin-top: 130px;
+    margin-top: 10px;
 }
 
 #calculateButton{
@@ -165,6 +164,32 @@ span{
     margin-top: 130px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     
+    .formContainer{
+        width: 90%;
+        max-width: 600px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formBlock{
+        width: 100%;
+    }
+
+    .formBlock{
+        height: 500px;
+    }
+
+    .output{
+        margin: 0;
+    }
+
+    input{
+        width: 95%;
+    }
+
+    .buttonContainer{
+        width: 100%;
+    }
 }

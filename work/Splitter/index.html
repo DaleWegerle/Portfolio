@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +40,7 @@
       
       <section class="peopleContainer">
         <label for="people">Number Of People</label><br>
-        <input type="text" name="people" id="peopleInput">
+        <input type="text" name="people" id="peopleInput" onkeyup="getPax()">
       </section>  
       
     </div>
@@ -67,10 +67,12 @@
 
       <section>
         <button id="calculateButton" onclick="calculateTip()">CALCULATE</button>
-        <button id="resetButton" onclick="test()">RESET</button>
+        <button id="resetButton" onclick="reset()">RESET</button>
       </section>
 
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
