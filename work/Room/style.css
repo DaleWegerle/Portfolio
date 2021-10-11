@@ -53,7 +53,6 @@ body{
     color: #ffffff;
     padding-bottom: 10px;
     border-bottom: 0px ;
- 
 }
 
 .navItem a:hover{
@@ -107,7 +106,6 @@ body{
     position: absolute;
     bottom: 0;
     left: 0;
-    
 }
 
 .arrow{
@@ -183,9 +181,75 @@ h3{
 .navItem{
     width: 50%;
 }
+}
+
+@media only screen and (max-width: 768px){
+#topNav{
+    width: 100%;
+    background-color: #000000;
+}
+
+.navItem{
+    width: unset;
+    margin-bottom: 30px;
+    margin-left: 8vw;
+}
+
+.navItem:first-of-type{
+    margin-left: 6vw;
+}
+
+#top{
+    flex-direction: column;
+}
+
+#topImage{
+    width: 100%;
+}
+
+#topInfo{
+    width: 100%; 
+    min-width: unset;
+    height: auto;
+    padding: 40px 40px 80px 40px;
+}
+
+#arrowNav{
+    left: calc(50% - 50px);
+}
+
+#bottom{
+    flex-wrap: wrap;
+}
+
+#leftImage{
+    width: 50%;
+}
+
+#bottomInfo{
+    width: 50%;
+    padding: 25px;
+}
+
+#rightImage{
+    width: 100%;
+    height: 50vw;
     
+}
 
+}
 
+@media only screen and (max-width: 425px){
+
+#leftImage{
+    width: 100%;
+}
+    
+#bottomInfo{
+    width: 100%;
+    padding: 25px;
+    height: auto;
+}
 }
 /*
 */
