@@ -2,30 +2,50 @@
     box-sizing: border-box;
 }
 
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    margin-top: 30px;
+    color: #8b8b8b;
+    line-height: 22px;
+}
+
+h2{
+    font-size: 16px;
+    margin-top: 30px;
+    color: #8b8b8b;
+    letter-spacing: 12px;
+    font-weight: 500;
+}
+
 body{
     font-family: 'Spartan', sans-serif;
     font-size: 12px;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
 
 #topNav{
-    width: 100vw;
+    width: 55%;
+    max-width: 900px;
     position: fixed;
     top: 0;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: left;
     align-items: center;
     z-index: 999;
 }
 
 .navItem{
-    padding: 30px;
+    margin-top: 30px;
+    margin-left: 3vw;
     box-sizing: border-box;
-
 }
 
 .navItem a{
@@ -51,49 +71,36 @@ body{
 #topImage{
     background-size: cover;
     background-color: #444444;
-    width: 55vw;
+    width: 55%;
+    max-width: 900px;
     height: 65vh; 
     position: relative;  
+}
+
+#topInfo{
+    width: 45%;
+    min-width: 600px;
+    height: 65vh;
+    background-color: #ffffff;
+    padding: 80px;
+    position: relative;
 }
 
 #arrowNavMobile{
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 10vw;
-    height: 10vh;
+    width: 20px;
+    height: 20px;
     background-color: grey;
     display: flex;
     flex-direction: row;
     visibility: hidden;
 }
 
-#topInfo{
-    width: 45vw;
-    height: 65vh;
-    background-color: #ffffff;
-    padding: 100px;
-    position: relative;
-}
-
-.info-1{
-    position: absolute;
-    visibility: hidden;
-}
-
-.info-2{
-    position: absolute;
-    visibility: hidden;
-}
-
-.info-3{
-    position: absolute;
-    visibility: hidden;
-}
-
 #arrowNav{
-    width: 10vw;
-    height: 10vh;
+    width: 100px;
+    height: 50px;
     background-color: grey;
     display: flex;
     flex-direction: row;
@@ -119,24 +126,19 @@ body{
 
 }
 
-h1{
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0;
+.info-1{
+    position: absolute;
+    visibility: hidden;
 }
 
-p{
-    margin-top: 30px;
-    color: #8b8b8b;
-    line-height: 22px;
+.info-2{
+    position: absolute;
+    visibility: hidden;
 }
 
-h2{
-    font-size: 16px;
-    margin-top: 30px;
-    color: #8b8b8b;
-    letter-spacing: 12px;
-    font-weight: 500;
+.info-3{
+    position: absolute;
+    visibility: hidden;
 }
 
 #bottom{
@@ -146,62 +148,44 @@ h2{
     align-items: center;
 }
 
-#leftImage{
-    width: 30vw;
-    height: 35vh;
-    background-color: grey;
-    background-image: url("images/image-about-dark.jpg");
-    background-size: cover;
-}
-
-#bottomInfo{
-    width: 40vw;
-    height: 35vh;
-    background-color: #ffffff;
-    padding: 40px;
-    
-}
-
 h3{
     letter-spacing: 5px;
 }
 
+#leftImage{
+    width: 30%;
+    height: 35vh;
+    background-color: grey;
+    background-image: url("images/image-about-dark.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#bottomInfo{
+    width: 40%;
+    height: 35vh;
+    background-color: #ffffff;
+    padding: 40px;
+    overflow: scroll;
+}
 
 #rightImage{
-    width: 30vw;
+    width: 30%;
     height: 35vh;
     background-color: grey;
     background-image: url("images/image-about-light.jpg");
     background-size: cover;
+    background-position: center center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 993px) {
+
+.navItem{
+    width: 50%;
+}
     
-body{
-    width: 100vw;
-    height: auto;
-}
-
-#top{
-    width: 100%;
-    flex-direction: column;
-}
-
-#topNav{
-    display: none;
-}
-
-#topImageMobile{
-    width: 100vw;
-    height: 100vh;
-    background-size: cover;
-
-}
-
-
-#topImage{
-    visibility: hidden;
-}
 
 
 }
+/*
+*/
