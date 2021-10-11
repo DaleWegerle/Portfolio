@@ -10,7 +10,7 @@ body{
 
 #modalContainer{
     /*background-color: #f44fc5;*/
-    background-image: linear-gradient(#f44fc5, #674bb1);
+    background-image: linear-gradient(#f44fc5af, #664bb1af);
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -207,6 +207,10 @@ button:hover{
    margin-left: 30px;  
 }
 
+.icons:hover{
+  cursor: pointer;
+}
+
 
 
 @media only screen and (max-width: 768px){
@@ -251,6 +255,11 @@ button:hover{
     #modalContent{
         width: 70%;
     }
-
     
+}
+
+@media only screen and (max-width: 425px){
+  #info h1{
+    font-size: 38px;
+  }
 }
