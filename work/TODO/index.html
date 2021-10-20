@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<!--onload="insertFromMemory()"-->
+<body>
+    <div id="header"></div>
+    <section id="toDoContainer">
+        <div id="titleContainer">
+            <h1>TODO</h1>
+            <a href="javascript:;"><img src="images/icon-sun.svg" alt=""></a>
+        </div>
+        <input type="name" id="todoInput" placeholder="Create a new todo" onkeyup="insertName(event)">
+        <div id="itemContainer">
+            
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(0)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(0)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(1)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(1)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(2)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(2)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(3)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(3)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(4)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(4)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(5)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(5)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(6)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(6)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(7)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(7)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(8)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(8)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle"onclick="completeItem(9)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(9)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(10)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(10)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(11)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(11)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(12)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(12)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(13)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(13)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(14)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(14)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(15)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(15)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow">
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(16)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(16)"></div>   
+            </div>
+            <hr class="rowDivider">
+            <div class="itemRow" >
+                <div class="checkCol"><div class="checkCircle" onclick="completeItem(17)"><img src="images/icon-check.svg" alt=""></div></div>
+                <div class="discriptionCol"><p class="todoOutput"></p></div>
+                <div class="deleteCol"><img src="images/icon-cross.svg" alt="" onclick="deleteThisItem(17)"></div>   
+            </div>
+            <hr class="rowDivider"> 
+            <div id="todoFooter">
+                <div id="colLeft"><p id="activeItems">0 Active Items</p></div>
+                <div id="colMiddle"><p id="all" onclick="updateDom()">All</p><p id="active" onclick="showActive()">Active</p><p id="completed" onclick="showCompleted()">Completed</p></div>
+                <div id="colRight"><p id="clear" onclick="clearCompleted()">Clear Completed</p></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+
+
+
+
+
+//Ram Arrays
+
+var activeArray = [];
+var completedArray= [];
+
+//Memory Arrays
+
+var retrievedCompletedArray = [];
+var retrievedActiveArray = [];
+
+//Global Variables
+
+//Retrieve arrays from memory ONLOAD
+var retrievedData = localStorage.getItem('myActiveArray');
+retrievedActiveArray = JSON.parse(retrievedData);
+
+var retrievedCompletedData = localStorage.getItem('myCompletedArray');
+retrievedCompletedArray = JSON.parse(retrievedCompletedData);
+
+//initialize arrays
+document.getElementById("all").style.color = "#3661ff";
+updateItemCount();
+updateDom();
+
+
+
+
+//Polulate DOM with all data retrieved from memory
+function updateDom(){
+
+var retrievedData = localStorage.getItem('myActiveArray');
+retrievedActiveArray = JSON.parse(retrievedData);
+
+for(b = 0; b < 17; b++){
+    var row = document.getElementsByClassName("itemRow")[b];
+    row.classList.remove("active");
+    var itemDivider = document.getElementsByClassName("rowDivider")[b];
+    itemDivider.classList.remove("active");
+}
+
+if(retrievedActiveArray.length != 0){
+    for(i = 0; i < retrievedActiveArray.length; i++){
+        var row = document.getElementsByClassName("itemRow")[i];
+        row.classList.add("active");
+        var rowDivide = document.getElementsByClassName("rowDivider")[i];
+        rowDivide.classList.add("active");
+        document.getElementsByClassName("todoOutput")[i].innerHTML = retrievedActiveArray[i];
+        activeArray = retrievedActiveArray;
+        document.getElementsByClassName("todoOutput")[i].style.textDecoration = "none";
+        document.getElementsByClassName("todoOutput")[i].style.color = "#ffffff";
+
+    }
+}
+
+
+
+var retrievedCompletedData = localStorage.getItem('myCompletedArray');
+retrievedCompletedArray = JSON.parse(retrievedCompletedData);
+
+if(retrievedCompletedArray.length != 0){
+
+    for(x = retrievedActiveArray.length; x < retrievedCompletedArray.length + retrievedActiveArray.length; x++){
+        var row = document.getElementsByClassName("itemRow")[x];
+        row.classList.add("active");
+        var rowDivide = document.getElementsByClassName("rowDivider")[x];
+        rowDivide.classList.add("active");
+        document.getElementsByClassName("todoOutput")[x].innerHTML = retrievedCompletedArray[x - retrievedActiveArray.length];
+        completedArray = retrievedCompletedArray;
+        document.getElementsByClassName("todoOutput")[x].style.textDecoration = "line-through";
+        document.getElementsByClassName("todoOutput")[x].style.color = "#37394e";
+        }
+    }
+    document.getElementById("all").style.color = "#3661ff";
+    document.getElementById("active").style.color = "#ffffff";
+    document.getElementById("completed").style.color = "#ffffff";
+}
+
+
+
+//Populate DOM with active array
+function showActive(){
+    var retrievedData = localStorage.getItem('myActiveArray');
+    retrievedActiveArray = JSON.parse(retrievedData);
+
+for(b = 0; b < 17; b++){
+    var row = document.getElementsByClassName("itemRow")[b];
+    row.classList.remove("active");
+    var itemDivider = document.getElementsByClassName("rowDivider")[b];
+    itemDivider.classList.remove("active");
+}
+
+
+if(retrievedActiveArray.length != 0){
+    for(i = 0; i < retrievedActiveArray.length; i++){
+        var row = document.getElementsByClassName("itemRow")[i];
+        row.classList.add("active");
+        var rowDivide = document.getElementsByClassName("rowDivider")[i];
+        rowDivide.classList.add("active");
+        document.getElementsByClassName("todoOutput")[i].innerHTML = retrievedActiveArray[i];
+        activeArray = retrievedActiveArray;
+        document.getElementsByClassName("todoOutput")[i].style.textDecoration = "none";
+        document.getElementsByClassName("todoOutput")[i].style.color = "#ffffff";
+        
+        }
+    }
+    document.getElementById("all").style.color = "#ffffff";
+    document.getElementById("active").style.color = "#3661ff";
+    document.getElementById("completed").style.color = "#ffffff";
+}
+
+
+
+//Populate DOM with completed array
+function showCompleted(){
+
+var retrievedCompletedData = localStorage.getItem('myCompletedArray');
+retrievedCompletedArray = JSON.parse(retrievedCompletedData);
+
+for(b = 0; b < 17; b++){
+    var row = document.getElementsByClassName("itemRow")[b];
+    row.classList.remove("active");
+    var itemDivider = document.getElementsByClassName("rowDivider")[b];
+    itemDivider.classList.remove("active");
+}
+
+
+if(retrievedCompletedArray.length != 0){
+
+    for(x = 0; x < retrievedCompletedArray.length; x++){
+        var row = document.getElementsByClassName("itemRow")[x];
+        row.classList.add("active");
+        var rowDivide = document.getElementsByClassName("rowDivider")[x];
+        rowDivide.classList.add("active");
+        document.getElementsByClassName("todoOutput")[x].innerHTML = retrievedCompletedArray[x];
+        completedArray = retrievedCompletedArray;
+        document.getElementsByClassName("todoOutput")[x].style.textDecoration = "line-through";
+        document.getElementsByClassName("todoOutput")[x].style.color = "#37394e";
+        }
+    }
+    document.getElementById("all").style.color = "#ffffff";
+    document.getElementById("active").style.color = "#ffffff";
+    document.getElementById("completed").style.color = "#3661ff";
+}
+
+
+
+//Find active items from memory and update footer count
+function updateItemCount(){
+    
+    
+    if(retrievedActiveArray == null){
+        console.log("arrays empty");
+    }else{
+        var retrievedData = localStorage.getItem('myActiveArray');
+        retrievedActiveArray = JSON.parse(retrievedData);
+        var activeCount = retrievedActiveArray.length;
+        document.getElementById("activeItems").innerHTML = activeCount + " items left";
+    }
+}
+
+
+
+//Move item from active array to completed array, add "line-through" completed
+function completeItem(completedIndex){
+    var index = completedIndex;
+
+    var completedItem = document.getElementsByClassName("todoOutput")[index].innerHTML;
+    var retrievedCompletedData = localStorage.getItem('myCompletedArray');
+    retrievedCompletedArray = JSON.parse(retrievedCompletedData);
+    completedArray  = retrievedCompletedArray;
+
+    if(retrievedActiveArray.indexOf(completedItem) != -1){
+    var x = retrievedActiveArray[index];
+    completedArray.push(x);
+    localStorage.setItem('myCompletedArray', JSON.stringify(completedArray));
+    document.getElementsByClassName("todoOutput")[index].style.textDecoration = "line-through";
+    document.getElementsByClassName("todoOutput")[index].style.color = "#37394e";
+    activeArray.splice(index, 1);
+    localStorage.setItem('myActiveArray', JSON.stringify(activeArray));
+    updateItemCount();
+    }
+}
+
+
+
+//Add item to active array on enter keypress event (keycode = 13)
+function insertName(event){
+
+var keyType = event.keyCode;
+
+    if(keyType == 13){
+        
+        var x = document.getElementById("todoInput").value;
+        var k = 0;
+
+        if(activeArray.length > 20){
+            alert("20 TODO's Max");
+        }else if(x == ""){
+            alert("Enter TODO");
+        }else if(k < 20){
+            activeArray.push(x);
+            localStorage.setItem('myActiveArray', JSON.stringify(activeArray));
+            document.getElementById("todoInput").value = "";
+            updateItemCount();
+            updateDom();
+            
+            document.getElementById("all").style.color = "#3661ff";
+        }
+    }
+}
+
+
+
+//Clear completed item array and call update DOM
+function clearCompleted(){
+    var i;
+    var retrievedCompletedData = localStorage.getItem('myCompletedArray');
+    retrievedCompletedArray = JSON.parse(retrievedCompletedData);
+
+    for(i = 0; i < retrievedCompletedArray.length; i++){
+        retrievedCompletedArray.splice(i, retrievedCompletedArray.length);
+        localStorage.setItem('myCompletedArray', JSON.stringify(retrievedCompletedArray));
+    }
+    updateDom()
+}
+
+
+//Remove selected item from arrays and DOM
+function deleteThisItem(index){
+    var index;
+
+    var indexContent = document.getElementsByClassName("todoOutput")[index].innerHTML;
+
+    var retrievedCompletedData = localStorage.getItem('myCompletedArray');
+    retrievedCompletedArray = JSON.parse(retrievedCompletedData);
+
+    var retrievedData = localStorage.getItem('myActiveArray');
+    retrievedActiveArray = JSON.parse(retrievedData);
+
+    if(retrievedCompletedArray.indexOf(indexContent) != -1){
+        completedArray.splice(retrievedCompletedArray.indexOf(indexContent), 1);
+        localStorage.setItem('myCompletedArray', JSON.stringify(completedArray));
+    }
+    else{
+        activeArray.splice(retrievedActiveArray.indexOf(indexContent), 1);
+        localStorage.setItem('myActiveArray', JSON.stringify(activeArray));
+    }
+    updateDom()
+    updateItemCount();
+}
+
+
+</script>
+</html>
