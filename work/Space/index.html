@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Space Tourism</title>
+        <link rel="stylesheet" href="indexStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400&family=Bellefair&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <div id="mobileSticky">
+        <div id="mobileNavSection">
+            <div id="mobileNavHolder">
+                <div class="mobileNavBlock" style="border-bottom: 3px solid #ffffff; opacity: 0;"><div class="mobileNav"><div class="navNum">00</div>HOME</div></div>
+                <div class="mobileNavBlock" onclick="location.href='destinations.html'"><div class="mobileNav"><div class="navNum">01</div>DESTINATION</div></div>
+                <div class="mobileNavBlock" onclick="location.href='crew.html'"><div class="mobileNav"><div class="navNum">02</div>CREW</div></div>
+                <div class="mobileNavBlock" onclick="location.href='technology.html'"><div class="mobileNav"><div class="navNum">03</div>TECHNOLOGY</div></div>
+            </div>
+        </div>
+    </div>
+    <div id="sticky">
+        <div id="top">
+            <div id="logoSection">
+                <div id="logoHolder">
+                    <img src="assets/shared/logo.svg" alt="Space Explore Logo" onclick="toggleMenu()">
+                </div>
+                <div id="hrHolder">
+                    <hr>
+                </div>
+            </div>
+            <div id="menuIconSection">
+                <div id="menuIconHolder">
+                    <img src="assets/shared/icon-hamburger.svg" onclick="toggleMenu()" alt="Hamburger Menu Icon">
+                </div>
+            </div>
+            <div id="navSection">
+                <div id="navHolder">
+                    <div class="navBlock" style="border-bottom: 3px solid #ffffff;"><div class="nav"><div class="navNum">00</div>HOME</div></div>
+                    <div class="navBlock" onclick="location.href='destinations.html'"><div class="nav"><div class="navNum">01</div>DESTINATION</div></div>
+                    <div class="navBlock" onclick="location.href='crew.html'"><div class="nav"><div class="navNum">02</div>CREW</div></div>
+                    <div class="navBlock" onclick="location.href='technology.html'"><div class="nav"><div class="navNum">03</div>TECHNOLOGY</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="bottom">
+        
+        <div id="left">
+            <div id="leftContent">
+                <h5>SO, YOU WANT TO TRAVEL TO</h5>
+                <h1>SPACE</h1>
+                <p>Let’s face it; if you want to go to space, 
+                    you might as well genuinely go to outer space and not hover kind of on the edge of it. 
+                    Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+            </div>
+        </div>
+        <div id="right">
+            <div id="rightContent">
+                <div id="explore">
+                    <h4>EXPLORE</h4>
+                </div>
+            </div>
+        </div><!---->
+    </div>
+</body>
+
+
+
+<script>
+    function toggleMenu(){
+        var menu = document.getElementById("mobileNavSection");
+        var navItem = document.getElementsByClassName("mobileNav");
+        var navItemBlock = document.getElementsByClassName("mobileNavBlock");
+
+        if(menu.style.opacity == 0){
+            menu.style.opacity = "1";
+            menu.style.transition = "opacity 0.4s";
+
+            navItem[0].style.opacity = "1";
+            navItem[0].style.transition = "opacity 0.4s";
+            navItem[0].style.transitionDelay = "0.2s";
+            navItemBlock[0].style.opacity = "1";
+            navItemBlock[0].style.transition = "opacity 0.4s";
+            navItemBlock[0].style.transitionDelay = "0.2s";
+
+            navItem[1].style.opacity = "1";
+            navItem[1].style.transition = "opacity 0.4s";
+            navItem[1].style.transitionDelay = "0.3s";
+
+            navItem[2].style.opacity = "1";
+            navItem[2].style.transition = "opacity 0.4s";
+            navItem[2].style.transitionDelay = "0.4s";
+
+            navItem[3].style.opacity = "1";
+            navItem[3].style.transition = "opacity 0.4s";
+            navItem[3].style.transitionDelay = "0.5s";
+            
+        }else{
+            menu.style.opacity = "0";
+            menu.style.transition = "opacity 0.4s";
+            menu.style.transitionDelay = "0.8s";
+
+            navItem[0].style.opacity = "0";
+            navItem[0].style.transition = "opacity 0.4s";
+            navItem[0].style.transitionDelay = "0.5s";
+            navItemBlock[0].style.opacity = "0";
+            navItemBlock[0].style.transition = "opacity 0.4s";
+            navItemBlock[0].style.transitionDelay = "0.5s";
+
+            navItem[1].style.opacity = "0";
+            navItem[1].style.transition = "opacity 0.4s";
+            navItem[1].style.transitionDelay = "0.4s";
+            navItem[2].style.opacity = "0";
+            navItem[2].style.transition = "opacity 0.4s";
+            navItem[2].style.transitionDelay = "0.3s";
+            navItem[3].style.opacity = "0";
+            navItem[3].style.transition = "opacity 0.4s";
+            navItem[3].style.transitionDelay = "0.2s";
+            
+        }
+    }
+</script>
+</html>

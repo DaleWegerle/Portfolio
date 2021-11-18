@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="technologyStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400&family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body onscroll="document.getElementById('pageTitle').style.display = 'none'">
+    <div id="mobileSticky">
+        <div id="mobileNavSection">
+            <div id="mobileNavHolder">
+                <div class="mobileNavBlock" onclick="location.href='index.html'"><div class="mobileNav"><div class="navNum">00</div>HOME</div></div>
+                <div class="mobileNavBlock" onclick="location.href='destinations.html'"><div class="mobileNav"><div class="navNum">01</div>DESTINATION</div></div>
+                <div class="mobileNavBlock" onclick="location.href='crew.html'"><div class="mobileNav"><div class="navNum">02</div>CREW</div></div>
+                <div class="mobileNavBlock" style="border-bottom: 3px solid #ffffff;"><div class="mobileNav"><div class="navNum">03</div>TECHNOLOGY</div></div>
+            </div>
+        </div>
+    </div>
+    <div id="sticky">
+        <div id="top">
+            <div id="pageTitle">
+                <div id="titleNumber"><h5>03</h5></div>
+                <div id="titleHeading"><h5>SPACE LAUNCH 101</h5></div>
+            </div>
+            <div id="logoSection">
+                <div id="logoHolder">
+                    <img src="assets/shared/logo.svg" alt="Space Explore Logo" onclick="toggleMenu()">
+                </div>
+                <div id="hrHolder">
+                    <hr>
+                </div>
+            </div>
+            <div id="menuIconSection">
+                <div id="menuIconHolder">
+                    <img src="assets/shared/icon-hamburger.svg" onclick="toggleMenu()" alt="Hamburger Menu Icon">
+                </div>
+            </div>
+            <div id="navSection">
+                <div id="navHolder">
+                    <div class="navBlock" onclick="location.href='index.html'"><div class="nav"><div class="navNum">00</div>HOME</div></div>
+                    <div class="navBlock" onclick="location.href='destinations.html'"><div class="nav"><div class="navNum">01</div>DESTINATION</div></div>
+                    <div class="navBlock" onclick="location.href='crew.html'"><div class="nav"><div class="navNum">02</div>CREW</div></div>
+                    <div class="navBlock" style="border-bottom: 3px solid #ffffff;"><div class="nav"><div class="navNum">03</div>TECHNOLOGY</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div id="buttonRow">
+            <div id="buttonSection">
+                <div class="numButton" onclick="loadTech(0)" style="background-color: #ffffff;"><h4 style="color:#0B0D17;" class="num">1</h4></div>
+                <div class="numButton" onclick="loadTech(1)"><h4 class="num">2</h4></div>
+                <div class="numButton" onclick="loadTech(2)"><h4 class="num">3</h4></div>
+            </div>
+        </div>
+        <div id="infoSection">
+            <div id="subtitle"><h5 id="sub">THE TERMINOLOGY...</h5></div>
+            <div id="title"><h2 id="heading">LAUNCH VEHICLE</h2></div>
+            <div id="discription">
+                <p id="disc">
+                   A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, 
+                   usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. 
+                   Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!
+                </p>
+            </div>
+        </div>
+        <div id="imageSection"></div>
+    </div>
+</body>
+<script>
+
+//
+//Creating copy objects
+//
+
+let tech = [
+
+    {
+        name : "LAUNCH VEHICLE",
+        images: {
+          portrait: "url('assets/technology/image-launch-vehicle-portrait.jpg')",
+          landscape: "url('assets/technology/image-launch-vehicle-landscape.jpg')"
+        },
+        description: "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!"
+
+    },
+    {
+        name : "SPACE PORT",
+        images: {
+          portrait: "url('assets/technology/image-spaceport-portrait.jpg')",
+          landscape: "url('assets/technology/image-spaceport-landscape.jpg')"
+        },
+        description: "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the seaport for ships or airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of the Earth’s rotation for launch."
+
+    },
+    {
+        name : "SPACE CAPSULE",
+        images: {
+          portrait: "url('assets/technology/image-space-capsule-portrait.jpg')",
+          landscape: "url('assets/technology/image-space-capsule-landscape.jpg')"
+        },
+        description: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
+
+    }
+
+]
+
+//
+//Grab DOM
+//    
+
+ var num = document.getElementsByClassName("num");
+ var numButton = document.getElementsByClassName("numButton");   
+ var heading = document.getElementById("heading");  
+ var disc = document.getElementById("disc");  
+ var imageSection = document.getElementById("imageSection");
+
+//
+//Functions
+//
+
+    var i;
+   
+    function loadTech(x){
+
+        var win = window.innerWidth
+
+        for(i = 0; i < 3; i++){
+        numButton[i].style.backgroundColor = "transparent";
+        num[i].style.color = "#ffffff";
+        }
+
+        heading.innerHTML = tech[x].name;
+        
+            if(win > 768){
+                imageSection.style.backgroundImage = tech[x].images.portrait;
+            }else if (win < 768){
+                imageSection.style.backgroundImage = tech[x].images.landscape;
+            }
+
+        disc.innerHTML = tech[x].description;
+        numButton[x].style.backgroundColor = "#ffffff"
+        num[x].style.color = "#0B0D17"
+    
+    }
+
+    
+    function toggleMenu(){
+        var menu = document.getElementById("mobileNavSection");
+        var navItem = document.getElementsByClassName("mobileNav");
+        var navItemBlock = document.getElementsByClassName("mobileNavBlock");
+        var buttonRow = document.getElementById("buttonRow");
+
+        
+        if(menu.style.opacity == 0){
+            buttonRow.style.visibility = "hidden";
+            menu.style.zIndex = 999;
+            menu.style.opacity = "1";
+            menu.style.transition = "opacity 0.4s";
+
+            navItem[0].style.opacity = "1";
+            navItem[0].style.transition = "opacity 0.4s";
+            navItem[0].style.transitionDelay = "0.2s";
+
+            navItem[1].style.opacity = "1";
+            navItem[1].style.transition = "opacity 0.4s";
+            navItem[1].style.transitionDelay = "0.3s";
+            
+            navItem[2].style.opacity = "1";
+            navItem[2].style.transition = "opacity 0.4s";
+            navItem[2].style.transitionDelay = "0.4s";
+            
+            navItem[3].style.opacity = "1";
+            navItem[3].style.transition = "opacity 0.4s";
+            navItem[3].style.transitionDelay = "0.5s";
+            navItemBlock[3].style.opacity = "1";
+            navItemBlock[3].style.transition = "opacity 0.4s";
+            navItemBlock[3].style.transitionDelay = "0.5s";
+            
+        }else{
+            setTimeout(function(){buttonRow.style.visibility = "visible";}, 800);
+            menu.style.zIndex = -100;
+            menu.style.opacity = "0";
+            menu.style.transition = "opacity 0.4s";
+            menu.style.transitionDelay = "0.8s";
+
+            navItem[0].style.opacity = "0";
+            navItem[0].style.transition = "opacity 0.4s";
+            navItem[0].style.transitionDelay = "0.5s";
+
+            navItem[1].style.opacity = "0";
+            navItem[1].style.transition = "opacity 0.4s";
+            navItem[1].style.transitionDelay = "0.4s";
+
+            navItem[2].style.opacity = "0";
+            navItem[2].style.transition = "opacity 0.4s";
+            navItem[2].style.transitionDelay = "0.3s";
+            
+            navItem[3].style.opacity = "0";
+            navItem[3].style.transition = "opacity 0.4s";
+            navItem[3].style.transitionDelay = "0.2s";
+            navItemBlock[3].style.opacity = "0";
+            navItemBlock[3].style.transition = "opacity 0.4s";
+            navItemBlock[3].style.transitionDelay = "0.2s";
+        }
+    }
+    
+</script>
+</html>
